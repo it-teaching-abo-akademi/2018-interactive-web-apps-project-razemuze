@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -8,14 +9,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  margin-top: 10px;
 }
 
 .App-link {
@@ -28,5 +24,72 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.portfolioContainer {
+  border: 1px solid black;
+  width: 48%;
+  margin-bottom: 20px;
+  margin-right: 1%;
+}
+
+.portfolioArea {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.closeButton {
+  padding: 5px;
+  font-size: 15px;
+  background: #ddd;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 5px;
+  float: right;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.portfolioTable {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 90%;
+  height: 200px;
+  max-height: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+
+.portfolioTotal {
+  margin-left: 2%;
+  margin-bottom: 20px;
+}
+
+.tableRow {
+  display: flex;
+  width: 100%;
+}
+
+.tableNameCol {
+  width: calc(50% - 1px);
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.tableAmountCol {
+  width: 50%;
+  border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 800px) {
+  .portfolioContainer {
+    width: 96%;
   }
 }
